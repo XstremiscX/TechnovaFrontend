@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+
+    --Main-box-shadow:  #000 0px 0px 10px 0px;
+    --Main-bg_color: #fdfcfa;
+    --Secondary-bg-color: #000;
+    --Cian-color: #15a6e6;
+    --Icons-hover-color: #d5d5d548;
+    --Icons-active-color: #9f9f9f4a;
+    --Border-color-productscards:  #bfbfbf;
+    --Titles-fonts: "Rajdhani","Orbitron","Exo2","Arial",sans-serif;
+    --Paragraph-fonts: "Roboto","Arial",sans-serif;
+    --AddCart-bg-color: #15a6e6;
+    --AddCart-hover-bg-color: #138bbf;
+    --AddCart-active-bg-color: #0f6f99;
+    --Detail-info-bg-color: #d5d5d548;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}

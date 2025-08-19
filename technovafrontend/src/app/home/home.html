@@ -1,0 +1,34 @@
+<div [id]="filtersActive ? 'mainDivFilter' : 'mainDiv'">
+    <nav id="mainNav">
+
+        <img src="assets/Images/LogoTechnova.png" alt="No image" id="logo"/>
+
+        <h2 id="pageTitle">{{pageTitle}}</h2>
+
+        <input type="text" name="search" id="searchInput" placeholder="Buscar">
+
+        <button id="searchButton" class="navButton"><img src="assets/Icons/SearchIcon.png" alt="Search" id="searchIcon" class="navIcon"></button>
+
+        <button id="userButton" class="navButton"><img src="assets/Icons/UserIcon.png" alt="User" id="userIcon" class="navIcon"></button>
+
+        <button (click)="getCartItems()" id="cartButton" class="navButton"><img src="assets/Icons/CartIcon.png" alt="Cart" id="cartIcon" class="navIcon"></button>
+
+        <button id="filterButton" class="navButton" (click)="toggleFilters()"><img src="assets/Icons/FilterIcon.png" alt="Filter" id="filterIcon" class="navIcon"></button>
+
+    </nav>
+    <div id="mainContent">
+        @defer{
+            @for(product of productList; track product.product_id){
+                <product-card  [product]="product"/>
+            }
+        }@placeholder{
+            <p>Productos</p>
+        }@loading() {
+            <p>Cargando productos...</p>
+        }
+
+    </div>
+    <div id="filterDiv">
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div id="mainContent">
+
+    <div (click)="goBack()" id="backButton">
+        <img src="assets/Icons/goBack.png" alt="Volver" id="backButtonIcon">
+    </div>
+
+    <div id="productDetailsContainer">
+        <img src="assets/productsImgs/{{product.product_image}}" alt="{{product.product_name}}" id="productImage">
+        <h2 id="productName">{{product.product_name}}</h2>
+        <div id="productInfo" >
+            <p id="description">{{product.description}}</p>
+            <div id="details">
+                <h3>Detalles del producto</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Vendedor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{product.brand_name}}</td>
+                            <td>{{product.category_name}}</td>
+                            <td>{{product.price | currency}}</td>
+                            <td>{{product.seller_name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="buttons">
+                <button id="buyButton">Comprar</button>
+                <button id="addToCartButton">Agregar al carrito</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,195 @@
+/* Estilo del contenedor principal */
+#mainContent{
+    width: 96%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2%;
+    background-color: var(--Main-bg_color);
+}
+
+/* Estilo del botón de retroceso */
+#backButton{
+    width: 2.5%;
+    height: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: 20%;
+    padding: 5px;
+    margin-right: 2.5%;
+}
+
+/* Estilo del botón de retroceso al pasar por encima */
+#backButton:hover {
+    background-color: var(--Icons-hover-color);
+}
+
+/* Estilo del bóton de retroceso al hacer clic */
+#backButton:active {
+    background-color: var(--Icons-active-color);
+}
+
+/* Estilo del icono del botón de retroceso */
+#backButtonIcon{
+    max-width: 90%;
+    height: auto;
+}
+
+/* Estilo del contenedor de detalles del producto */
+#productDetailsContainer {
+    width: 95%;
+    height: 80%;
+    display: grid;
+    grid-template: 10% 90% / 54% 44%;
+    column-gap: 2%;
+    align-self: center;
+}
+
+/* Estilo de la imagen del producto */
+#productImage{
+    width: 100%;
+    height: 70%;
+    grid-area: 1 / 2 / 3/ 3;
+    border-radius: 10px;
+    border: solid 1px var(--Border-color-productscards);
+}
+
+/* Estilo del nombre del producto */
+#productName{
+    width: 100%;
+    grid-area: 1 / 1 / 1 / 1;
+    margin: 0;
+    text-align: center;
+    align-content: center;
+    font-family: var(--Paragraph-fonts);
+    background-color: var(--Secondary-bg-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    /* border: solid 1px var(--Secondary-bg-color); */
+    /* border-bottom: none; */
+}
+
+/* Estilo general de las etiquetas p */
+p{
+    font-family: var(--Paragraph-fonts);
+}
+
+/* Estilo del contenedor de la información */
+#productInfo{
+    width: 96%;
+    height: 100%;
+    grid-area: 2 / 1 / 2 / 1;
+    padding: 0 2%;
+    /* border: solid 1px var(--Secondary-bg-color); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: white;
+}
+
+/* Estilo de la descripción del producto */
+#description{
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+
+#details{
+    width: 100%;
+    height: fit-content;
+    padding: 1%;
+}
+
+/* Estilo del subtitulo de los detalles */
+h3{
+    width: 100%;
+    height: fit-content;
+    font-family: var(--Paragraph-fonts);
+}
+
+/* Estilo de la tabla que contiene los detalles */
+table{
+    height: fit-content;
+    font-family: var(--Paragraph-fonts);
+    border-collapse:separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+table td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+table td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+/* Estilo del contenedor de los botones */
+#buttons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilo del boton de comprar */
+#buyButton{
+    width: 30%;
+    background-color: var(--AddCart-bg-color);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buyButton:hover{
+    background-color: var(--AddCart-hover-bg-color);
+}
+
+#buyButton:active{
+    background-color: var(--AddCart-active-bg-color);
+}
+
+#addToCartButton{
+    width: 30%;
+    background-color: var(--AddCart-bg-color);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addToCartButton:hover{
+    background-color: var(--AddCart-hover-bg-color);
+}
+
+#addToCartButton:active{
+    background-color: var(--AddCart-active-bg-color);
+}
