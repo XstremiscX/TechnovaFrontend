@@ -1,0 +1,121 @@
+
+/*
+
+-----------------------------------------------------------------------------------------------------------------
+----------------------------------------- Estilo del header del carrito -----------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+*/
+
+#cartHeader{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: 7;
+}
+
+#cartHeader img{
+    height: 60%;
+    width: auto;
+    margin: 8% auto 0 42%;
+    background-color: white;
+    padding: 3.5% 3.5% 0 2%;
+    border-radius: 10px;
+}
+
+#cartHeader p{
+    font-family: var(--Paragraph-fonts);
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#cartHeader p:hover{
+    cursor: pointer;
+}
+
+
+/*
+
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------- Estilo del contenedor de los items del carrito --------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+*/
+
+#cartContent{
+    height: 74%;
+    margin-top: 6%;
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+#cartBottomInfo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0 0 0;
+    font-family: var(--Paragraph-fonts);
+}
+
+#checkoutButton{
+    background-color: var(--AddCart-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#checkoutButton:hover{
+    background-color: var(--AddCart-hover-bg-color);
+}
+
+#checkoutButton:active{
+    background-color: var(--AddCart-active-bg-color);
+}
+
+p{
+    font-family: var(--Paragraph-fonts);
+}
+
+/*
+
+-----------------------------------------------------------------------------------------------------------------
+------------------------------ Estilo del contenedor de la información de los items -----------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+*/
+
+cart-item{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border: 1px solid var(--cartItems-border-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    align-items: center;
+    background-color: var(--Main-bg_color);
+    font-family: var(--Paragraph-fonts);
+    z-index: 5;
+    box-shadow: #000 0px 5px 10px -3px;
+}
+
+cart-item:last-child{
+    margin-bottom: 40px;
+}

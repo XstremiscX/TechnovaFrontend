@@ -13,7 +13,6 @@ export class CartService {
 
     // Obtenemos el carrito del localStorage
     const cartItem = localStorage.getItem('cart');
-
     // Verificamos si hay elementos en el carrito;
     if(cartItem){
 
@@ -47,6 +46,8 @@ export class CartService {
       // Una vez que hemos actualizado el carrito, lo guardamos en el localStorage.
       localStorage.setItem('cart', JSON.stringify(this.cart));
 
+      this.cart = [];
+
     }else{
 
       // En el caso de que no existe ningun carrito previo, entonces agergamos el producto al arreglo cart y lo guardamos en el localStorage.
@@ -54,15 +55,22 @@ export class CartService {
 
       localStorage.setItem('cart', JSON.stringify(this.cart));
 
+      this.cart = [];
+
     }
   }
 
   getCartItems(){
 
+    this.cart = [];
+    // Obtenemos los datos del carrito que esta en el local storage.
     const cartItem = localStorage.getItem('cart');
 
     if(cartItem){
 
+      this.cart = [];
+      
+      // Si existen datos entonces devolvemos los datos del carrito.
       this.cart = JSON.parse(cartItem);
 
       return this.cart;
@@ -70,6 +78,7 @@ export class CartService {
 
     }else{
 
+      // Si no existen entonces retornamos un mensaje de no hay elementos en el carrito.
       return "No hay elementos en el carrito"
 
     }

@@ -1,0 +1,26 @@
+<div id="cartHeader">
+    <img src="assets/Icons/CartIcon.png" alt="Cart">
+    <p (click)="close()">x</p>
+</div>
+<div id="cartContent">
+    @defer{
+        
+        @if(typeof cartItems === 'string' || cartItems.length === 0){
+            <p >No hay productos en el carrito.</p>
+        }@else{
+            @for(item of cartItems; track item.product.product_id){
+                <cart-item [item]="item"/>
+            }
+        }
+        
+    }@placeholder {
+        <p>No hay productos en el carrito.</p>
+    }@loading() {
+        <p>Cargando productos...</p>
+    }
+        
+</div>
+<div id="cartBottomInfo">
+    <p id="totalPrice"><span style="font-weight: bold;">Total:</span> {{ 0 | currency:'COP':'$':'1.0-0' }}</p>
+    <button id="checkoutButton">Ir a pagar</button>
+</div>
