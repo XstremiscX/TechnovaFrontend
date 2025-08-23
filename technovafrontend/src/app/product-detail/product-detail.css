@@ -42,7 +42,7 @@
     width: 95%;
     height: 80%;
     display: grid;
-    grid-template: 10% 90% / 54% 44%;
+    grid-template: 10% 90% / 44% 54% ;
     column-gap: 2%;
     align-self: center;
 }
@@ -51,7 +51,7 @@
 #productImage{
     width: 100%;
     height: 70%;
-    grid-area: 1 / 2 / 3/ 3;
+    grid-area: 1 / 1 / 3 / 2;
     border-radius: 10px;
     border: solid 1px var(--Border-color-productscards);
 }
@@ -59,7 +59,7 @@
 /* Estilo del nombre del producto */
 #productName{
     width: 100%;
-    grid-area: 1 / 1 / 1 / 1;
+    grid-area: 1 / 2 / 1 / 2;
     margin: 0;
     text-align: center;
     align-content: center;
@@ -81,7 +81,7 @@ p{
 #productInfo{
     width: 96%;
     height: 100%;
-    grid-area: 2 / 1 / 2 / 1;
+    grid-area: 2 / 2 / 2 / 2;
     padding: 0 2%;
     /* border: solid 1px var(--Secondary-bg-color); */
     display: flex;

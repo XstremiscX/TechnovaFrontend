@@ -31,4 +31,14 @@
     <div id="filterDiv">
 
     </div>
+
+    @if(cartViewActive){
+
+        <div id="cartContainer">
+            <cart-view [cartItems]="cartItems" (closeCart)="cartViewActive = false"/>
+        </div>
+
+    }@else {
+
+    }
 </div>

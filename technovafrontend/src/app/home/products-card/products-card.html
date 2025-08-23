@@ -4,7 +4,7 @@
         <h2 class="productName">{{product.product_name}}</h2>
         <p class="brandName">{{product.brand_name}}</p>
         <p class="categoryName">{{product.category_name}}</p>
-        <p class="price">Precio: {{product.price | currency}}</p>
+        <p class="price">Precio: {{product.price | currency:'COP':'$':'1.0-0'}}</p>
     </div>
     <button (click)="addToCart()" class="addToCartButton">Agregar al carrito</button>
 </div>

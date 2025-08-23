@@ -153,3 +153,30 @@ product-card:hover{
     transition: transform 0.2s;
     box-shadow: var(--Main-box-shadow);
 }
+
+
+/* 
+
+--------------------------------------------------------------------------------------------------------------------------
+------------------------------------------- Estilo del contenedor del carrito --------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+
+*/
+#cartContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-area: 1 / 1 / 3 / 3;
+    z-index: 3;
+}
+
+cart-view{
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    margin-right: 0;
+    margin-left: auto;
+}

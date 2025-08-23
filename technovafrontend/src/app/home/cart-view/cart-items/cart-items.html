@@ -1,0 +1,15 @@
+<img src="assets/productsImgs/{{item.product.product_image}}" alt="Imagen del producto">
+<div id="cartItemInfoContainer">
+    <div id="topInfo">
+        <p id="productName">{{item.product.product_name}}</p>
+        <p id="deleteItem">x</p>
+    </div>
+    <div id="bottomInfo">
+        <p id="price">{{item.product.price | currency:'COP':'$':'1.0-0'}}</p>
+        <div id="quantityControl">
+            <p (click)="decrease()" id="decrement">-</p>
+            <p id="counter">{{item.quantity}}</p>
+            <p (click)="increase()" id="increment">+</p>
+        </div>
+    </div>
+</div>
