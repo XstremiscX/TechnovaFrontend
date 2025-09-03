@@ -20,4 +20,4 @@ This repository contains the initial frontend development for **[Technova]**, bu
 
 Watch a demo of the current progress here:
 
-➡️ [Watch Progress Video]([https://youtu.be/8BrQ-nxvVOo](https://www.youtube.com/watch?v=U3rEVDm4-jM))
+➡️ [Watch Progress Video](https://www.youtube.com/watch?v=U3rEVDm4-jM)
